@@ -19,3 +19,11 @@ class CounterLibrary:
         
     def reset_counter(self):
         self.counter.reset()
+    def counter_reset_after_one_increment(self):
+        self.counter.increase()
+        self.counter.reset()
+    def counter_reset_after_several_increments(self, amount):
+        self.counter.increment(int(amount))
+        self.counter.reset()
+        
+        
